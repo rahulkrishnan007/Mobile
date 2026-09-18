@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mobile Store</title>
+
+    <!-- bootstrap CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+    <!-- tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="bg-black">
+<div class="items-center flex grid grid-cols-3 bg-black text-white ">
+  <img src="https://i.pinimg.com/1200x/a7/8c/40/a78c406e4ad95f68bd8b014582ef3ece.jpg" alt="" class="w-20 ps-1 py-2">
+  <h1 class="font-serif pt-2">Mobi<span class="text-red-600">Doc</span></h1>
+  <nav class="flex gap-5 ml-auto pe-13">
+    <a href="#" class="!no-underline relative text-white text-lg font-medium
+    hover:text-red-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-red-500 after:transtion-all after:duration-300 hover:after:w-full">Home</a>
+    <a href="#" class="!no-underline relative text-white text-lg font-medium
+    hover:text-red-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-red-500 after:transtion-all after:duration-300 hover:after:w-full">Products</a>
+    <a href="#"
+    class="!no-underline relative text-white text-lg font-medium
+    hover:text-red-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-red-500 after:transtion-all after:duration-300 hover:after:w-full">About</a>
+    <a href="#" class="!no-underline relative text-white text-lg font-medium
+    hover:text-red-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-red-500 after:transtion-all after:duration-300 hover:after:w-full">Contact</a>
+  </nav>
+</div>
+</header>
+
+
+    <!-- Banner -->
+<section id="home">
+
+    <div class="h-screen relative">
+
+        <!-- Bootstrap Carousel -->
+        <div id="carouselExampleSlidesOnly"
+             class="carousel slide h-full"
+             data-bs-ride="carousel">
+
+            <div class="carousel-inner h-full">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active h-full">
+                    <img src="https://i.pinimg.com/1200x/95/74/9f/95749f8c1234cd7d3b1094364be95deb.jpg"
+                         class="d-block w-100 h-full object-cover"
+                         alt="">
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item h-full">
+                    <img src="https://i.pinimg.com/736x/ef/c0/fe/efc0fef204d2176a8e640c69d0ffe1d7.jpg"
+                         class="d-block w-100 h-full object-cover"
+                         alt="">
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item h-full">
+                    <img src="https://i.pinimg.com/736x/3a/0f/9a/3a0f9a3b1c842bc59aec199cac99afb9.jpg"
+                         class="d-block w-100 h-full object-cover"
+                         alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Hero Content -->
+        <div class="absolute inset-0 flex items-center justify-center text-center text-white">
+
+            <div class="bg-black/50 p-8 rounded-xl max-w-2xl">
+
+                <h1 class="text-4xl md:text-6xl font-bold">
+                    Find Your Perfect Smartphone
+                </h1>
+
+                <p class="mt-4 text-lg md:text-xl">
+                    Explore the latest smartphones with powerful performance,
+                    stunning displays, advanced cameras, and long-lasting batteries.
+                </p>
+
+                <a href="#products"
+                   class=" !no-underline inline-block mt-6 bg-red-600 hover:bg-red-700
+                          text-white font-semibold px-6 py-3 rounded-lg
+                          transition duration-300">
+                    Shop Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Products -->
+<section id="products" class="py-16 bg-gray-100">
+<div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-800">
+                Latest Smartphones
+            </h2>
+            <p class="text-gray-600 mt-3">
+                Choose from our collection of powerful and stylish smartphones.
+            </p>
+        </div>
+        <!-- Product Cards -->
+        <div class="row g-4">
+            <!-- pro-1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm hover:shadow-xl transition duration-300">
+                    <img
+    src="https://i.pinimg.com/736x/60/4e/40/604e400e98a5a72a289f93a4e3501a2c.jpg"
+    class="card-img-top h-64 object-cover"
+    alt="Mobile Phone"
+>
+                    <div class="card-body text-center">
+                        <p class="text-sm text-gray-500">
+                            Samsung
+                        </p>
+                        <h3 class="card-title text-2xl font-bold">
+                            Galaxy S24
+                        </h3>
+                        <p class="text-gray-600 mt-2">
+                            8GB RAM • 256GB Storage
+                        </p>
+                        <h4 class="text-xl font-bold mt-3">
+                            ₹59,999
+                        </h4>
+                        <button
+                            class="btn btn-dark mt-4"
+                            data-bs-toggle="modal"
+                            data-bs-target="#phoneModal">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- pro-2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm hover:shadow-xl transition duration-300">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_2JPjB0VA-acD0MIYaHZ0iMiFHon02iPGQja20sNWDw&s"
+                         class="card-img-top h-64 object-cover"
+                         alt="iPhone 15">
+                    <div class="card-body text-center">
+                        <p class="text-sm text-gray-500">
+                            Apple
+                        </p>
+                        <h3 class="card-title text-2xl font-bold">
+                            iPhone 15
+                        </h3>
+                        <p class="text-gray-600 mt-2">
+                            6GB RAM • 128GB Storage
+                        </p>
+                        <h4 class="text-xl font-bold mt-3">
+                            ₹69,999
+                        </h4>
+                        <button
+                            class="btn btn-dark mt-4"
+                            data-bs-toggle="modal"
+                            data-bs-target="#phoneModal">
+                            view Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Pro2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm hover:shadow-xl transition duration-300">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-ST4dISsENLBKe7OGMI02dBqRfsdzYoCJEsPayDYQw&s=10"
+                         class="card-img-top h-64 object-cover"
+                         alt="OnePlus 12">
+                    <div class="card-body text-center">
+                        <p class="text-sm text-gray-500">
+                            OnePlus
+                        </p>
+                        <h3 class="card-title text-2xl font-bold">
+                            OnePlus 12
+                        </h3>
+                        <p class="text-gray-600 mt-2">
+                            12GB RAM • 256GB Storage
+                        </p>
+                        <h4 class="text-xl font-bold mt-3">
+                            ₹64,999
+                        </h4>
+                        <button
+                            class="btn btn-dark mt-4"
+                            data-bs-toggle="modal"
+                            data-bs-target="#phoneModal">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Pro3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm hover:shadow-xl transition duration-300">
+                    <img src="https://i.pinimg.com/1200x/d6/35/5e/d6355ed0fd5832e93202a403e419181b.jpg"
+                         class="card-img-top h-64 object-cover"
+                         alt="OnePlus 12">
+                    <div class="card-body text-center">
+                        <p class="text-sm text-gray-500">
+                            OnePlus
+                        </p>
+                        <h3 class="card-title text-2xl font-bold">
+                            OnePlus 12
+                        </h3>
+                        <p class="text-gray-600 mt-2">
+                            12GB RAM • 256GB Storage
+                        </p>
+                        <h4 class="text-xl font-bold mt-3">
+                            ₹64,999
+                        </h4>
+                        <button
+                            class="btn btn-dark mt-4"
+                            data-bs-toggle="modal"
+                            data-bs-target="#phoneModal">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm hover:shadow-xl transition duration-300">
+                    <img src="https://i.pinimg.com/1200x/d6/35/5e/d6355ed0fd5832e93202a403e419181b.jpg"
+                         class="card-img-top h-64 object-cover"
+                         alt="OnePlus 12">
+                    <div class="card-body text-center">
+                        <p class="text-sm text-gray-500">
+                            vivo
+                        </p>
+                        <h3 class="card-title text-2xl font-bold">
+                            vivo 12
+                        </h3>
+                        <p class="text-gray-600 mt-2">
+                            12GB RAM • 256GB Storage
+                        </p>
+                        <h4 class="text-xl font-bold mt-3">
+                            ₹64,999
+                        </h4>
+                        <button
+                            class="btn btn-dark mt-4"
+                            data-bs-toggle="modal"
+                            data-bs-target="#phoneModal">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm hover:shadow-xl transition duration-300">
+                    <img src="https://i.pinimg.com/1200x/d6/35/5e/d6355ed0fd5832e93202a403e419181b.jpg"
+                         class="card-img-top h-64 object-cover"
+                         alt="OnePlus 12">
+                    <div class="card-body text-center">
+                        <p class="text-sm text-gray-500">
+                            OnePlus
+                        </p>
+                        <h3 class="card-title text-2xl font-bold">
+                            OnePlus 12
+                        </h3>
+                        <p class="text-gray-600 mt-2">
+                            12GB RAM • 256GB Storage
+                        </p>
+                        <h4 class="text-xl font-bold mt-3">
+                            ₹64,999
+                        </h4>
+                        <button
+                            class="btn btn-dark mt-4"
+                            data-bs-toggle="modal"
+                            data-bs-target="#phoneModal">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>         
+
+    </div>
+
+</section>
+<!-- Contact -->
+<section id="contact">
+
+    <h2>Contact <span>Details</span></h2>
+
+    <p class="contact-text">
+        Have any questions about our smartphones? Feel free to contact us.
+    </p>    <div class="contact-box">
+
+        <form action="">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+
+            <!-- Upload -->
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupFile01">
+                    Upload
+                </label>
+
+                <input
+                    type="file"
+                    class="form-control"
+                    id="inputGroupFile01"
+                >
+            </div>
+
+            <label for="message">Message:</label>
+            <textarea
+                id="message"
+                rows="5"
+                placeholder="Enter your message"
+            ></textarea>
+            <div class="text-center m-2 ">
+                            <button type="submit" class="hover:bg-red-500 text-red-500 bg-gray-100 px-5 py-2 rounded hover:text-white">Sent</button>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+ <!-- Footerrr -->
+
+<footer
+    id="contact"
+    class="bg-black text-white py-8"   
+>
+    <div class="text-center">
+<h2 class="text-2xl font-bold font-serif">
+            Mobi<span class="text-red-500">Doc</span>
+        </h2>
+        <p class="text-gray-400 mt-3">
+            Discover amazing Gadgets
+        </p>
+
+
+        <!-- Links -->
+
+        <div class="flex justify-center gap-6 mt-5">
+
+            <a
+    href="#home"
+    class="!no-underline text-gray-400 hover:text-red-500
+           transition duration-300"
+>
+    <i class="fa-brands fa-instagram"></i>
+    Instagram
+</a>
+
+<a
+    href="#about"
+    class="!no-underline text-gray-400 hover:text-red-500
+           transition duration-300"
+>
+    <i class="fa-brands fa-facebook"></i>
+    Facebook
+</a>
+
+<a
+    href="#product"
+    class="!no-underline text-gray-400 hover:text-red-500
+           transition duration-300"
+>
+    <i class="fa-brands fa-github"></i>
+    GitHub
+</a>
+
+<a
+    href="#contact"
+    class="!no-underline text-gray-400 hover:text-red-500
+           transition duration-300"
+>
+    <i class="fa-solid fa-envelope"></i>
+    Email
+</a>
+
+        </div>
+        <hr >
+        <p class="text-sm text-gray-500">
+            © 2026 MobiDoc. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+</body>
+
+</html>
