@@ -55,3 +55,35 @@
     }
 
 }
+/* Products */
+
+#products .card {
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#products .card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+#products .card-body {
+    border-top: 1px solid #eee;
+}
+
+#products .card:hover {
+    border-color: red;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    #products .card img {
+        height: 230px;
+    }
+
+}
